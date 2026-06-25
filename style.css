@@ -1356,9 +1356,9 @@ button {
    ========================================================================== */
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-info-panel h3 {
@@ -1372,12 +1372,16 @@ button {
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-methods {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  text-align: left;
 }
 
 .method-card {
@@ -1875,7 +1879,7 @@ button {
   .exp-date {
     align-self: flex-start;
   }
-  .contact-form-panel {
-    padding: 24px;
+  .contact-methods {
+    grid-template-columns: 1fr;
   }
 }
